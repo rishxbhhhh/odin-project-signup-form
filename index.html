@@ -7,72 +7,73 @@
     <link rel="icon" href="./images/icon.svg" type="image/icon type" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="sidebar">
-      <img src="./images/bg.jpg" alt="leaves-wallpaper" />
-      <div class="odin-logo">
-        <img src="./images/odin-lined.png" alt="odin-project" />
-        <span>ODIN</span>
-      </div>
-      <p class="credit">
-        Photo by
-        <a
-          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Halie West</a
-        >
-        on
-        <a
-          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Unsplash</a
-        >
-      </p>
+        <img src="./images/bg.jpg" alt="leaves-wallpaper" />
+        <div class="odin-logo">
+            <img src="./images/odin-lined.png" alt="odin-project" />
+            <span>ODIN</span>
+        </div>
+        <p class="credit">
+            Photo by
+            <a
+            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Halie West</a
+            >
+            on
+            <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+            >
+        </p>
     </div>
     <div class="container">
-      <p class="upper">
-        This is not a real online service! You know you need something like this
-        in your life to realize your deepest dreams. Sign up <span>now</span> to
-        get started.
-      </p>
-      <p class="upper">You <span>know</span> you want to.</p>
-      <form id="myForm" action="http://httpbin.org/post" method="post">
-        <h1 class="form-title">Let's do this!</h1>
-        <div class="separation">
-            <div class="inputs">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="fname" id="first-name" />
-              </div>
-              <div class="inputs">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="lname" id="last-name" />
-              </div>
-        </div>
-        <div class="separation">
-            <div class="inputs">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="inputs">
-                <label for="phone">PHONE</label>
-                <input type="number" name="phone" id="phone" />
-              </div>
-        </div>
-        <div class="separation">
-            <div class="inputs">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="pass" id="password" />
-              </div>
-              <div class="inputs">
-                <label for="conf-password">CONFIRM PASSWORD</label>
-                <input type="password" name="cpass" id="conf-password" />
-              </div>
-        </div>
-      </form>
-      <button form="myForm" type="submit">Create Account</button>
-      <p class="lower">
-        Already have an account? <span id="login">Log in</span>
+        <p class="upper">
+            This is not a real online service! You know you need something like this
+            in your life to realize your deepest dreams. Sign up <span>now</span> to
+            get started.
+        </p>
+        <p class="upper">You <span>know</span> you want to.</p>
+        <form id="myForm" action="http://httpbin.org/post" method="post">
+            <h1 class="form-title">Let's do this!</h1>
+            <div class="separation">
+                <div class="inputs">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="fname" id="first-name" />
+                </div>
+                <div class="inputs">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="lname" id="last-name" />
+                </div>
+            </div>
+            <div class="separation">
+                <div class="inputs">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="inputs">
+                    <label for="phone">PHONE</label>
+                    <input type="number" name="phone" id="phone" />
+                </div>
+            </div>
+            <div class="separation">
+                <div class="inputs">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="pass" id="password" onkeyup='check();'/>
+                </div>
+                <div class="inputs">
+                    <label for="conf-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="cpass" id="conf-password" onkeyup='check();'/>
+                </div>
+                <span class="message"></span>
+            </div>
+        </form>
+        <button form="myForm" type="submit" id="btn-submit">Create Account</button>
+        <p class="lower">
+            Already have an account? <span id="login">Log in</span>
       </p>
     </div>
-  </body>
+    <script src="./main.js"></script>
+</body>
 </html>
